@@ -1,0 +1,19 @@
+const Person = function (person) {
+  this.id = person.id;
+  this.first_name = person.first_name;
+  this.last_name = person.last_name;
+  this.address1 = person.address1;
+  this.address2 = person.address2;
+  this.notes = person.notes;
+  this.city = person.city;
+  this.state = person.state;
+  this.zip = person.zip;
+  this.team_id = person.team_id;
+  this.email = person.email;
+  this.phone = person.phone;
+  this.password = person.password;
+  this.user_name = person.user_name;
+  this.license_level_id = person.license_level_id;
+  this.person_type = person.person_type;
+};
+module.exports = Person;

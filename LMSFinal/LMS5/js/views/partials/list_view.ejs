@@ -1,0 +1,32 @@
+
+  <table id='<%=view.list.id%>' class="<%=view.list.tableClasses%>">
+      
+      <!-- Output Table Headers -->
+      <tr class="trow">
+        
+        <% view.list.columns.forEach( function(col, key){ %>   
+            <th class="thead sortable" data-name="<%=col.name%>">
+                <%=col.label%> 
+                <img id="<%=col.name%>-asc" class="asc" src="/img/arrow-up-short.svg" style="display: none;">
+                <img id="<%=col.name%>-desc" class="desc" src="/img/arrow-down-short.svg" style="display: none;">  
+            </th>
+        <% }) %>
+      
+        <th class="thead">
+            Actions
+        </th>
+
+      </tr> 
+      <% data.forEach(function(de) { %>
+        <tr data-id="<%=de.id%>" data-name="<%=de.name%>" data-coach="<%=de.coach_name%>" data-phone="<%=de.phone%>" data-numPlayers="<%=de.numPlayers%>" data-bs-toggle="popover">
+            <% view.list.columns.forEach(function(col) { %>
+                <td><%=de[col.name]%></td>
+            <% }); %>
+                <td>
+                    <span data-bs-toggle="modal" data-bs-target="#<%=view.formModalContainerId%>"><button class="btn"><img src="/img/pencil-square.svg"></button></span>
+                    <span data-bs-toggle="modal" data-bs-target="#<%=view.deleteModalContainerId%>"><button class="btn"><img src="/img/trash3.svg"></button></span>
+                </td>
+        </tr>
+      <% }); %>      
+    </table>
+   

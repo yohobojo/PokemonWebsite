@@ -1,0 +1,73 @@
+$primary_text: blue;
+$primary_bg: #f6e652;
+$table_bg: rgba(255, 255, 255, 0.4);
+$nav_bar: rgb(230, 230, 230);
+$tab_content: rgba(255, 255, 255, 0.8);
+$nav_button: rgba(230, 230, 230, 0.9);
+$nav_button_clicked: rgb(255, 255, 255);
+
+@mixin background_details {
+    background-image: url(/img/background1.jpeg);
+    background-position-y: top;
+    background-size: 100%;
+    background-color: $primary_bg;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: $nav_bar;
+    &.nav-tabs.container-fluid button.nav-link {
+        background-color: $nav_button; 
+        &.active {
+            background-color: $nav_button_clicked;
+            color: $primary_text;
+        }
+    }
+}
+
+table {
+    background-color: $table_bg;
+}
+
+.tab-content.container-fluid {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 140px;
+}
+
+body {
+    @include background_details();
+}
+
+#home-cols {
+    width: 33.33%;
+}
+
+#asideGIF {
+    padding-top: 15%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: large;
+}
+
+#logo {
+    zoom: 100%;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#eyeOnPokemonImg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#eyeOnPokemonTxt {
+    text-align: center;
+    font-size: 30;
+}
+
+#copyright {
+    text-align: center;
+}

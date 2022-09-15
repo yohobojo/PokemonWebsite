@@ -1,0 +1,64 @@
+nav {
+  background-color: #e6e6e6;
+}
+
+nav.nav-tabs.container-fluid button.nav-link {
+  background-color: rgba(230, 230, 230, 0.9);
+}
+
+nav.nav-tabs.container-fluid button.nav-link.active {
+  background-color: white;
+  color: blue;
+}
+
+table {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tab-content.container-fluid {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 140px;
+}
+
+body {
+  background-image: url(/img/background1.jpeg);
+  background-position-y: top;
+  background-size: 100%;
+  background-color: #f6e652;
+  background-repeat: no-repeat;
+}
+
+#home-cols {
+  width: 33.33%;
+}
+
+#asideGIF {
+  padding-top: 15%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 40px;
+  text-align: center;
+  font-size: large;
+}
+
+#logo {
+  zoom: 100%;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+#eyeOnPokemonImg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#eyeOnPokemonTxt {
+  text-align: center;
+  font-size: 30;
+}
+
+#copyright {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
